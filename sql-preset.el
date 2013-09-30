@@ -1,7 +1,7 @@
 ;;; sql-preset.el --- SQL connection presets
 ;; -*- lexical-binding: t -*-
 
-;; Copyright (C) 2013  Ian Eure
+;; Copyright (C) 2013 Ian Eure
 
 ;; Author: Ian Eure <ian.eure@gmail.com>
 ;; Keywords: unix, processes, extensions

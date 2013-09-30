@@ -1,0 +1,29 @@
+* SQL Presets
+
+  Emacs has wonderful support for SQL built right in, but it’s a drag
+  to type in the username/host/port/DB/password every time you want
+  to connect to a frequently-used database. SQL Preset fixes this.
+
+** Usage
+
+   *First*, define your presets in =sql-preset-alist=.
+
+#+BEGIN_SRC emacs-lisp
+  (setq sql-preset-alist
+        '((example
+           (default-directory "~/")
+           (sql-product 'mysql)
+           (sql-user "username")
+           (sql-password "password")
+           (sql-database "database")
+           (sql-server "host.tld")
+           (sql-port 3306))))
+#+END_SRC
+
+   *Next*, connect with =M-x sql-preset-connect=.
+
+   That’s it.
+
+** Future improvements
+
+   - Define presets with customize
